@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #FFCDB2
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.4fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Menu_Lateral Card1 Card2 Card3"
+      "Menu_Lateral Card4 Card5 Card6"
+      "Menu_Lateral Card7 Card8 Card9";
+    height: 100vh;    
+  }
+  
+  .Menu_Lateral { grid-area: Menu_Lateral; background-color: #FFCDB2; height: 100vh;}
+  
+  .Card1 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card1;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #FFCDB2;
+    border: 5px solid #FFCDB2;   
+  }
+    
+  .Card2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card2;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #E5989B;
+    border: 5px solid #E5989B;   
+  }
+  
+
+  .Card3 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card3;
+    height: 33.33vh;
+    
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #FFCDB2;
+    border: 5px solid #FFCDB2; 
+  }
+  
+  .Card4 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card4;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #E5989B;
+    border: 5px solid #E5989B;  
+  }
+  
+   
+  .Card5 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card5;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #FFCDB2;
+    border: 5px solid #FFCDB2; 
+  }
+  
+  .Card6 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card6;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #E5989B;
+    border: 5px solid #E5989B;  
+  }
+
+  
+  .Card7 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card7;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #FFCDB2;
+    border: 5px solid #FFCDB2; 
+  }
+
+  
+  .Card8 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card8;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #E5989B;
+    border: 5px solid #E5989B;  
+  }
+  
+  .Card9 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Card9;
+    height: 33.33vh;
+
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    background-color: #FFCDB2;
+    border: 5px solid #FFCDB2; 
+  }
+  
+
+  img{
+    transform: translate(0,-15%);
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s ease-out;
+    
+  }
+
+
+.card__front__back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+.Card1:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.card__front, .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.card__back {
+  text-transform: uppercase;
+  background-color:#6D6875;
+  color: #FFCDB2;
+  transform: rotateY(180deg);
+  border-radius:  2%;
+}
+
+
+.Card1:hover img  {
+  transform: scale(1.2);   
+
+}
+
+.parrafo{
+  font-size: 1%;
+}
+
+.Card2:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card2:hover img  {
+  transform: scale(1.2);   
+
+}
+
+.Card3:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card3:hover img  {
+  transform: scale(1.2);   
+
+}
+
+.Card4:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card4:hover img  {
+  transform: scale(1.2);   
+
+}
+
+
+.Card5:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card5:hover img  {
+  transform: scale(1.2);   
+
+}
+.Card6:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card6:hover img  {
+  transform: scale(1.2);   
+
+}
+
+.Card7:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card7:hover img  {
+  transform: scale(1.2);   
+
+}
+.Card8:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card8:hover img  {
+  transform: scale(1.2);   
+
+}
+
+.Card9:hover .card__front__back {
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+
+.Card9:hover img  {
+  transform: scale(1.2);   
+
+}
